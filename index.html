@@ -311,7 +311,7 @@ function loop(){
     drawBelt();drawUrgentPallet(PLAYER_SX,PALLET_REST);
     ctx.fillStyle='#E63946';ctx.font='bold 10px sans-serif';ctx.textAlign='center';ctx.fillText('YOU ▶',PLAYER_SX+PW/2,PALLET_REST-7);
     drawFreshPallet(310,PALLET_REST);drawFreshPallet(450,PALLET_REST);drawTruck(TRUCK_LEFT,false);
-    overlay('FIFO JUMP','#2DE8B0',["You're the URGENT pallet. Fresh pallets block your path.","Belt goes right → left. Jump over each fresh pallet.","Reach the truck on the right to be dispatched first!"],'Press Space or tap to start');
+    overlay('FEFO JUMP','#2DE8B0',["You're the URGENT pallet. Fresh pallets block your path.","Belt goes right → left. Jump over each fresh pallet.","Reach the truck on the right to be dispatched first!"],'Press Space or tap to start');
     requestAnimationFrame(loop);return;
   }
   if(state==='over'){
